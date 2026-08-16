@@ -3,10 +3,155 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Takashi Iida</title>
+  <meta name="description" content="Academic website of Takashi Iida, MD — physical activity, causal inference, and chronic disease prevention.">
+  <meta name="theme-color" content="#0d120f">
+  <title>Takashi Iida, MD — Movement, Causality &amp; Prevention</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=Newsreader:opsz,wght@6..72,400;6..72,500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-  <h1>Takashi Iida, MD</h1>
-  <p>Clinical Epidemiology · Causal Inference · Digital Health</p>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Takashi Iida home">T<span>.</span>Iida</a>
+    <nav aria-label="Main navigation">
+      <button class="menu-button" aria-expanded="false" aria-controls="site-menu">Menu</button>
+      <ul id="site-menu">
+        <li><a href="#about" data-en="About" data-ja="自己紹介">About</a></li>
+        <li><a href="#publications" data-en="Publications" data-ja="論文">Publications</a></li>
+        <li><a href="#work" data-en="Work" data-ja="活動">Work</a></li>
+        <li><a href="#contact" data-en="Contact" data-ja="連絡先">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="language" type="button" aria-label="Switch language">JP</button>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow" data-en="PHYSICIAN · CLINICAL RESEARCHER" data-ja="医師 · 臨床研究者">PHYSICIAN · CLINICAL RESEARCHER</p>
+        <h1 id="hero-title" data-en="Takashi Iida <em>MD</em>" data-ja="飯田　聖 <em>MD</em>">Takashi Iida <em>MD</em></h1>
+        <p class="hero-intro" data-en="Studying how movement shapes long-term health—and how rigorous causal methods can guide better prevention." data-ja="身体活動が長期的な健康にどう影響するかを研究し、厳密な因果推論をより良い疾病予防につなげます。">Studying how movement shapes long-term health—and how rigorous causal methods can guide better prevention.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#publications" data-en="View publications" data-ja="論文を見る">View publications</a>
+          <a class="button text-link" href="#contact" data-en="Get in touch ↗" data-ja="お問い合わせ ↗">Get in touch ↗</a>
+        </div>
+        <div class="social-links">
+          <a class="social-button linkedin" href="https://www.linkedin.com/in/takashi-iida1113" target="_blank" rel="noopener noreferrer" aria-label="Takashi Iida on LinkedIn">
+            <span aria-hidden="true">in</span> LinkedIn
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual portrait-card reveal">
+        <div class="portrait-meta"><span>PORTRAIT</span><span>TAKASHI IIDA</span></div>
+        <div class="portrait-placeholder" role="img" aria-label="Portrait photo placeholder for Takashi Iida">
+          <span>TI</span>
+          <p data-en="Portrait photo<br>to be added" data-ja="プロフィール写真<br>追加予定">Portrait photo<br>to be added</p>
+        </div>
+        <div class="portrait-caption"><span data-en="PHYSICIAN · RESEARCHER" data-ja="医師 · 研究者">PHYSICIAN · RESEARCHER</span><span>BOSTON</span></div>
+      </div>
+      <p class="scroll-cue">SCROLL <span>↓</span></p>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="section-label reveal"><span>01</span><p data-en="About" data-ja="自己紹介">About</p></div>
+      <div class="about-copy reveal">
+        <h2 data-en="From everyday movement<br>to <em>long-term health.</em>" data-ja="日々の身体活動から、<br><em>長期的な健康へ。</em>">From everyday movement<br>to <em>long-term health.</em></h2>
+        <div class="about-prose">
+          <p data-en="I am a physician and clinical researcher studying physical activity, causal inference, and chronic disease prevention. I am interested in how everyday movement patterns shape health over time—and how we can study those relationships more rigorously." data-ja="私は、身体活動、因果推論、慢性疾患予防を研究する医師・臨床研究者です。日常の身体活動パターンが長期的な健康にどう影響するか、そしてその関係をより厳密に検証する方法に関心があります。">I am a physician and clinical researcher studying physical activity, causal inference, and chronic disease prevention. I am interested in how everyday movement patterns shape health over time—and how we can study those relationships more rigorously.</p>
+          <p data-en="My work connects wearable and real-world data with modern epidemiologic methods. The goal is to translate complex longitudinal data into evidence that can support practical and equitable approaches to prevention." data-ja="ウェアラブルデータやリアルワールドデータを、現代的な疫学手法と結びつけて研究しています。複雑な縦断データを、実践的で公平な予防につながるエビデンスへ変換することを目指しています。">My work connects wearable and real-world data with modern epidemiologic methods. The goal is to translate complex longitudinal data into evidence that can support practical and equitable approaches to prevention.</p>
+        </div>
+        <div class="about-research">
+          <div>
+            <p class="eyebrow" data-en="RESEARCH TOPICS" data-ja="研究テーマ">RESEARCH TOPICS</p>
+            <ul><li data-en="Physical Activity" data-ja="身体活動">Physical Activity</li><li data-en="Chronic Disease Prevention" data-ja="慢性疾患予防">Chronic Disease Prevention</li><li data-en="Mental Health" data-ja="メンタルヘルス">Mental Health</li></ul>
+          </div>
+          <div>
+            <p class="eyebrow" data-en="METHODS &amp; DATA" data-ja="方法・データ">METHODS &amp; DATA</p>
+            <ul><li data-en="Causal Inference" data-ja="因果推論">Causal Inference</li><li data-en="Wearable &amp; Sensor Data" data-ja="ウェアラブル・センサーデータ">Wearable &amp; Sensor Data</li><li data-en="Longitudinal Data Analysis" data-ja="縦断データ解析">Longitudinal Data Analysis</li></ul>
+          </div>
+        </div>
+        <div class="career-heading">
+          <p class="eyebrow" data-en="EDUCATION" data-ja="学歴">EDUCATION</p>
+          <h3 data-en="Academic training" data-ja="学歴・研修">Academic training</h3>
+        </div>
+        <div class="career-table">
+          <article>
+            <p class="career-date">2025 — PRESENT</p>
+            <div><h4 data-en="MPH Candidate, Epidemiology &amp; Biostatistics" data-ja="MPH課程（疫学・生物統計学）">MPH Candidate, Epidemiology &amp; Biostatistics</h4><p data-en="Boston University School of Public Health" data-ja="ボストン大学公衆衛生大学院">Boston University School of Public Health</p></div>
+          </article>
+          <article>
+            <p class="career-date">2019 — 2025</p>
+            <div><h4 data-en="Doctor of Medicine (MD)" data-ja="医学士（MD）">Doctor of Medicine (MD)</h4><p data-en="Niigata University School of Medicine" data-ja="新潟大学医学部医学科">Niigata University School of Medicine</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="section work publications">
+      <div class="section-label reveal"><span>02</span><p data-en="Publications" data-ja="論文">Publications</p></div>
+      <div class="work-intro reveal">
+        <h2 data-en="One list.<br><em>Many connections.</em>" data-ja="一つの論文リスト。<br><em>複数のつながり。</em>">One list.<br><em>Many connections.</em></h2>
+        <p data-en="Each paper appears once and can carry multiple topic and method tags. This keeps the publication record clear as the work grows." data-ja="各論文は一度だけ掲載し、複数の研究テーマ・方法タグを付けます。論文が増えても重複せず、明確に整理できます。">Each paper appears once and can carry multiple topic and method tags. This keeps the publication record clear as the work grows.</p>
+      </div>
+      <div class="publication-toolbar reveal" role="tablist" aria-label="Filter publications by tag">
+        <button class="active" type="button" role="tab" aria-selected="true" data-publication-filter="all" data-en="All" data-ja="すべて">All</button>
+        <button type="button" role="tab" aria-selected="false" data-publication-filter="physical-activity" data-en="Physical Activity" data-ja="身体活動">Physical Activity</button>
+        <button type="button" role="tab" aria-selected="false" data-publication-filter="chronic-disease" data-en="Chronic Disease" data-ja="慢性疾患">Chronic Disease</button>
+        <button type="button" role="tab" aria-selected="false" data-publication-filter="mental-health" data-en="Mental Health" data-ja="メンタルヘルス">Mental Health</button>
+        <button type="button" role="tab" aria-selected="false" data-publication-filter="causal-inference" data-en="Causal Inference" data-ja="因果推論">Causal Inference</button>
+        <button type="button" role="tab" aria-selected="false" data-publication-filter="wearable-data" data-en="Wearable Data" data-ja="ウェアラブルデータ">Wearable Data</button>
+      </div>
+      <div class="publication-list">
+        <article class="publication-item reveal" data-publication-tags="">
+          <p class="publication-number">01</p>
+          <div><p class="publication-status" data-en="PUBLICATION DETAILS TO BE ADDED" data-ja="論文情報を追加予定">PUBLICATION DETAILS TO BE ADDED</p><h3 data-en="Your published paper will appear here." data-ja="発表済み論文をここに掲載します。">Your published paper will appear here.</h3><p data-en="Add the title, authors, journal, year, DOI or PubMed link, and relevant tags." data-ja="タイトル、著者、雑誌名、年、DOIまたはPubMedリンク、関連タグを追加します。">Add the title, authors, journal, year, DOI or PubMed link, and relevant tags.</p><ul class="publication-tags"><li>Topic</li><li>Method</li></ul></div>
+        </article>
+      </div>
+      <p class="publication-empty" hidden data-en="No publications with this tag yet." data-ja="このタグの論文はまだありません。">No publications with this tag yet.</p>
+    </section>
+
+    <section id="work" class="section selected-work">
+      <div class="section-label reveal"><span>03</span><p data-en="Work" data-ja="活動">Work</p></div>
+      <div class="work-heading reveal">
+        <h2 data-en="Beyond<br><em>publications.</em>" data-ja="論文を越えた、<br><em>活動。</em>">Beyond<br><em>publications.</em></h2>
+        <p data-en="Presentations, awards, and fellowships that reflect ongoing academic work and training." data-ja="学術活動と研修の歩みを示す、発表、受賞、フェローシップを掲載します。">Presentations, awards, and fellowships that reflect ongoing academic work and training.</p>
+      </div>
+      <div class="work-tabs reveal" role="tablist" aria-label="Work categories">
+        <button class="active" type="button" role="tab" aria-selected="true" data-work-filter="all" data-en="All" data-ja="すべて">All</button>
+        <button type="button" role="tab" aria-selected="false" data-work-filter="presentation" data-en="Presentations" data-ja="発表">Presentations</button>
+        <button type="button" role="tab" aria-selected="false" data-work-filter="award" data-en="Awards &amp; Fellowships" data-ja="受賞・フェローシップ">Awards &amp; Fellowships</button>
+      </div>
+      <div class="work-list">
+        <article class="work-entry reveal" data-work-type="award">
+          <div class="work-meta"><span data-en="FELLOWSHIP" data-ja="フェローシップ">FELLOWSHIP</span><time>2025 — PRESENT</time></div>
+          <h3 data-en="Epidemiology Excellence (E2) Fellowship" data-ja="Epidemiology Excellence（E2）フェローシップ">Epidemiology Excellence (E2) Fellowship</h3>
+          <p data-en="Boston University School of Public Health" data-ja="ボストン大学公衆衛生大学院">Boston University School of Public Health</p>
+          <a href="https://epidemiologyexcellence.squarespace.com" target="_blank" rel="noopener noreferrer" data-en="Program website ↗" data-ja="プログラムサイト ↗">Program website ↗</a>
+        </article>
+        <article class="work-entry work-placeholder reveal" data-work-type="presentation">
+          <div class="work-meta"><span data-en="PRESENTATION" data-ja="発表">PRESENTATION</span><time>—</time></div>
+          <h3 data-en="Presentation details will appear here." data-ja="発表情報をここに掲載します。">Presentation details will appear here.</h3>
+          <p data-en="Add the title, meeting, date, presentation type, and related link." data-ja="演題名、学会名、日付、発表形式、関連リンクを追加します。">Add the title, meeting, date, presentation type, and related link.</p>
+        </article>
+      </div>
+      <p class="work-empty" hidden data-en="No entries in this category yet." data-ja="このカテゴリーの項目はまだありません。">No entries in this category yet.</p>
+    </section>
+
+    <section id="contact" class="section contact">
+      <p class="eyebrow reveal" data-en="COLLABORATION · QUESTIONS · IDEAS" data-ja="共同研究 · ご質問 · アイデア">COLLABORATION · QUESTIONS · IDEAS</p>
+      <h2 class="reveal" data-en="Let’s work on questions<br>that <em>matter.</em>" data-ja="大切な問いに、<br>一緒に<em>取り組みましょう。</em>">Let’s work on questions<br>that <em>matter.</em></h2>
+      <p class="contact-note reveal" data-en="For research collaborations or academic inquiries, please get in touch." data-ja="共同研究や学術的なお問い合わせについて、お気軽にご連絡ください。">For research collaborations or academic inquiries, please get in touch.</p>
+      <a class="contact-link reveal" href="mailto:takiid@bu.edu">takiid@bu.edu <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#top">T<span>.</span>Iida</a>
+    <p>© <span id="year"></span> <span data-en="Takashi Iida" data-ja="飯田　聖">Takashi Iida</span></p>
+    <a href="#top" data-en="Back to top ↑" data-ja="ページ上部へ ↑">Back to top ↑</a>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
